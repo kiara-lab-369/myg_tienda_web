@@ -1,0 +1,252 @@
+/* ===== RESET GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+    background: linear-gradient(135deg, #ffe4ec, #f873aa);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /* espacio para el nav fijo */
+    padding-top: 80px;
+}
+
+/* ===== NAVBAR FIJO ===== */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #f55079;
+    color: white;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+}
+
+/* título */
+nav h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+/* ===== MENÚ PRINCIPAL ===== */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* items */
+.menu li {
+    position: relative;
+}
+
+/* links */
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* hover links */
+.menu a:hover {
+    background: #f590b2;
+    transform: translateY(-2px);
+}
+
+/* ===== SUBMENÚ ===== */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fa87a4;
+    list-style: none;
+    min-width: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* items submenu */
+.submenu li a {
+    padding: 12px;
+    font-size: 14px;
+}
+
+/* hover submenu */
+.submenu li a:hover {
+    background: #f5a1bc;
+}
+
+/* mostrar submenu (desktop) */
+.menu li:hover .submenu,
+.menu li:focus-within .submenu {
+    display: block;
+}
+
+/* ===== CONTENIDO ===== */
+.fondo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 50px 30px;
+}
+
+/* ===== CARD (GRANDES) ===== */
+.card {
+    width: 480px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* título */
+.card h2 {
+    background: #f55079;
+    color: white;
+    text-align: center;
+    padding: 14px;
+}
+
+/* imagen */
+.card-img {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* cuerpo */
+.card-body {
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* botón */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #f55079;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff2e63;
+    transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #f55079;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* contenedor */
+.footer-contenido {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* redes */
+.redes {
+    margin: 15px 0;
+}
+
+.redes a {
+    color: white;
+    font-size: 28px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+/* hover bonito */
+.redes a:hover {
+    color: #ffd1dc;
+    transform: scale(1.2);
+}
+
+/* QR */
+.qr {
+    margin-top: 20px;
+}
+
+.qr img {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* copy */
+.copy {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+    nav {
+        padding: 0 20px;
+    }
+
+    nav h1 {
+        font-size: 20px;
+    }
+
+    .menu {
+        gap: 10px;
+    }
+
+    .menu a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .fondo {
+        padding: 20px;
+    }
+}

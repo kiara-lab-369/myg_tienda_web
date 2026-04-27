@@ -1,0 +1,273 @@
+/* ===== RESET GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+    background: linear-gradient(135deg, #ffe4ec, #f873aa);  /* Fondo con gradiente rosado */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;  /* Espacio para el nav fijo */
+}
+
+/* ===== NAVBAR FIJO ===== */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #f55079; /* Color rosado fuerte */
+    color: white;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+}
+
+/* título */
+nav h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+/* ===== MENÚ PRINCIPAL ===== */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* items */
+.menu li {
+    position: relative;
+}
+
+/* links */
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* hover links */
+.menu a:hover {
+    background: #f590b2; /* Rosado suave en hover */
+    transform: translateY(-2px);
+}
+
+/* ===== SUBMENÚ ===== */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fa87a4; /* Rosado claro */
+    list-style: none;
+    min-width: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* items submenu */
+.submenu li a {
+    padding: 12px;
+    font-size: 14px;
+}
+
+/* hover submenu */
+.submenu li a:hover {
+    background: #f5a1bc; /* Rosado en hover */
+}
+
+/* mostrar submenu (desktop) */
+.menu li:hover .submenu,
+.menu li:focus-within .submenu {
+    display: block;
+}
+
+/* BOTÓN REGRESAR */
+.btn-regresar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-regresar:hover {
+    background: #333;
+}
+
+/* CONTENEDOR */
+.container {
+    background: white;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 10 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* TITULO */
+.container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* GRUPOS */
+.grupo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* LABEL */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* INPUTS */
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #f55079;  /* Bordes rosados */
+    box-shadow: 0 0 5px rgba(245, 80, 121, 0.5);
+}
+
+/* RADIO BUTTONS */
+.box label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+/* BOTÓN ENVIAR */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #f55079;  /* Rosado fuerte */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #d83f61;  /* Rosado oscuro en hover */
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #f55079;  /* Rosado fuerte */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0; /* Asegura que el footer esté en la parte inferior */
+    margin-top: auto; /* Asegura que el footer esté al final del contenido */
+}
+
+/* contenedor */
+.footer-contenido {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* redes */
+.redes {
+    margin: 15px 0;
+}
+
+.redes a {
+    color: white;
+    font-size: 28px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+/* hover redes */
+.redes a:hover {
+    color: #ffd1dc;  /* Rosado suave en hover */
+    transform: scale(1.2);
+}
+
+/* QR */
+.qr {
+    margin-top: 20px;
+}
+
+.qr img {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 150px;  /* Tamaño del QR ajustado */
+    height: 150px; /* Tamaño del QR ajustado */
+}
+
+/* copy */
+.copy {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+    nav {
+        padding: 0 20px;
+    }
+
+    nav h1 {
+        font-size: 20px;
+    }
+
+    .menu {
+        gap: 5px;
+    }
+
+    .menu a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .fondo {
+        padding: 20px;
+    }
+}
