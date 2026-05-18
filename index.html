@@ -1,138 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MYG SPORTS</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MYG SPORTS</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- BARRA -->
-<nav>
+  <nav>
     <h1>MYG SPORTS</h1>
     <ul class="menu">
-        <li><a href="index.html">INICIO</a></li>
-        <li><a href="catalogo.html">CATÁLOGO</a>
-            <ul class="submenu">
-                <li><a href="mujer.html">MUJER</a></li>
-                <li><a href="varon.html">VARÓN</a></li>
-            </ul>
-        </li>
-        <li><a href="desyprom.html">DESCUENTOS</a></li>
-        <li><a href="qmyg.html">SOBRE NOSOTROS</a></li>
-        <li><a href="formularios.html">FORMULARIO</a></li>
+      <li><a href="index.html">INICIO</a></li>
+      <li>
+        <a href="catalogo.html">CATÁLOGO</a>
+        <ul class="submenu">
+          <li><a href="mujer.html">MUJER</a></li>
+          <li><a href="varon.html">VARÓN</a></li>
+        </ul>
+      </li>
+      <li><a href="desyprom.html">DESCUENTOS</a></li>
+      <li><a href="qmyg.html">SOBRE NOSOTROS</a></li>
+      <li><a href="formularios.html">FORMULARIO</a></li>
     </ul>
-</nav>
+  </nav>
 
-<!-- ESLOGAN -->
-<div class="eslogan">
+  <div class="eslogan">
     <h2>¡Bienvenidos a nuestra tienda virtual!</h2>
-</div>
+  </div>
 
-<!-- CONTENIDO -->
-<div class="fondo">
+  <div class="fondo">
     <div class="card">
-        <h2>LO MAS DESTACADO</h2>
-        <!-- Slider de imágenes -->
-        <div class="slider">
-            <img src="1.png" class="activo" alt="Imagen 1">
-            <img src="2.png" alt="Imagen 2">
-            <img src="3.png" alt="Imagen 3">
-            <img src="4.png" alt="Imagen 4">
-            <img src="5.png" alt="Imagen 5">
-            <img src="6.png" alt="Imagen 6">
-            <img src="7.png" alt="Imagen 7">
-            <img src="8.png" alt="Imagen 8">
-        </div>
+      <h2>LO MÁS DESTACADO</h2>
+      <div class="slider">
+        <img src="1.png" class="activo" alt="Imagen 1">
+        <img src="2.png" alt="Imagen 2">
+        <img src="3.png" alt="Imagen 3">
+        <img src="4.png" alt="Imagen 4">
+        <img src="5.png" alt="Imagen 5">
+        <img src="6.png" alt="Imagen 6">
+        <img src="7.png" alt="Imagen 7">
+        <img src="8.png" alt="Imagen 8">
+      </div>
     </div>
-</div>
+  </div>
 
-<!-- SECCIÓN DE PRODUCTOS -->
-<div class="fondo">
-    <!-- Producto 1 -->
-    <div class="card">
-        <h2>CONJUNTO LICRA</h2>
-        <img src="img/conjunto_celeste.png" alt="Conjunto Celeste">
-        <p class="descripcion">TELA ELÁSTICA Y SUAVE</p>
-        <p class="descripcion">S/ 75.0</p>
-        <a class="obtener" href="https://wa.me/51980023828?text=Hola,%20quiero%20el%20Conjunto%20Fitness" target="_blank">Hacer pedido</a>
-    </div>
+  <h2 style="text-align:center; color:white; margin-top:20px;">
+    Nuestros productos
+  </h2>
 
-    <!-- Producto 2 -->
-    <div class="card">
-        <h2>CONJUNTO LICRA</h2>
-        <img src="img/11.webp" alt="Conjunto Licra 2">
-        <p class="descripcion">Tela elástica y suave</p>
-        <p class="descripcion">S/ 75.0</p>
-        <a class="obtener" href="https://wa.me/51980023828?text=Hola,%20quiero%20el%20Conjunto%20Fitness" target="_blank">Hacer pedido</a>
-    </div>
+  <!-- AQUÍ FIREBASE PONDRÁ LOS PRODUCTOS -->
+  <section class="fondo" id="productos"></section>
 
-    <!-- Producto 3 -->
-    <div class="card">
-        <h2>CONJUNTO LICRA</h2>
-        <img src="img/12.webp" alt="Conjunto Licra 3">
-        <p class="descripcion">Tela elástica y suave</p>
-        <p class="descripcion">S/ 75.0</p>
-        <a class="obtener" href="https://wa.me/51980023828?text=Hola,%20quiero%20el%20Conjunto%20Fitness" target="_blank">Hacer pedido</a>
-    </div>
-
-    <!-- Producto 4 -->
-    <div class="card">
-        <h2>CONJUNTO LICRA</h2>
-        <img src="img/13.webp" alt="Conjunto Licra 4">
-        <p class="descripcion">Tela elástica y suave</p>
-        <p class="descripcion">S/ 75.0</p>
-        <a class="obtener" href="https://wa.me/51980023828?text=Hola,%20quiero%20el%20Conjunto%20Fitness" target="_blank">Hacer pedido</a>
-    </div>
-
-    <!-- Producto 5 -->
-    <div class="card">
-        <h2>CONJUNTO LICRA</h2>
-        <img src="img/14.webp" alt="Conjunto Licra 5">
-        <p class="descripcion">Tela elástica y suave</p>
-        <p class="descripcion">S/ 75.0</p>
-        <a class="obtener" href="https://wa.me/51980023828?text=Hola,%20quiero%20el%20Conjunto%20Fitness" target="_blank">Hacer pedido</a>
-    </div>
-
-    <!-- Producto 6 -->
-    <div class="card">
-        <h2>CONJUNTO LICRA</h2>
-        <img src="img/conjunto_celeste.png" alt="Conjunto Licra 6">
-        <p class="descripcion">Tela elástica y suave</p>
-        <p class="descripcion">S/ 75.0</p>
-        <a class="obtener" href="https://wa.me/51980023828?text=Hola,%20quiero%20el%20Conjunto%20Fitness" target="_blank">Hacer pedido</a>
-    </div>
-</div>
-
-<!-- FOOTER -->
-<footer class="footer">
+  <footer class="footer">
     <div class="footer-contenido">
-        <h3>MYG SPORTS</h3>
-        <p>Síguenos en nuestras redes</p>
+      <h3>MYG SPORTS</h3>
+      <p>Síguenos en nuestras redes</p>
 
-        <!-- REDES -->
-        <div class="redes">
-            <a href="https://www.instagram.com/mg.sport.00?igsh=enFkMGk0Y3Y4NmFn" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://api.whatsapp.com/message/JHXOCGTK5J3AD1?autoload=1&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.tiktok.com/@myg.sport28?_r=1&_t=ZS-95tHpKw0Hh7" target="_blank"><i class="fab fa-tiktok"></i></a>
-        </div>
+      <div class="redes">
+        <a href="https://www.instagram.com/mg.sport.00?igsh=enFkMGk0Y3Y4NmFn" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/message/JHXOCGTK5J3AD1?autoload=1&app_absent=0" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.tiktok.com/@myg.sport28?_r=1&_t=ZS-95tHpKw0Hh7" target="_blank">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
 
-        <!-- QR -->
-        <div class="qr">
-            <p>ENCUENTRANOS EN</p>
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.google.com/maps/place/Centro+Comercial+28+de+Julio+de+Manzanilla/@-12.0609793,-77.0161466,17z/data=!3m1!4b1!4m6!3m5!1s0x9105c8a1b63eb821:0x7d378ae889f78714!8m2!3d-12.0609846!4d-77.0135717!16s%2Fg%2F11c584b3fs?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D" alt="QR Google Maps">
-            <p>PISO 5 - STAND N°251 - N°276 - N°277</p>
-        </div>
+      <div class="qr">
+        <p>ENCUÉNTRANOS EN</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.google.com/maps/place/Centro+Comercial+28+de+Julio+de+Manzanilla" alt="QR Google Maps">
+        <p>PISO 5 - STAND N°251 - N°276 - N°277</p>
+      </div>
 
-        <p class="copy">© 2026 MYG SPORTS</p>
+      <p class="copy">© 2026 MYG SPORTS</p>
     </div>
-</footer>
+  </footer>
 
-<script src="img.js"></script>
-<script type="module" src="firebase.js"></script>
+  <script src="img.js"></script>
+  <script type="module" src="firebase.js"></script>
+
 </body>
 </html>
