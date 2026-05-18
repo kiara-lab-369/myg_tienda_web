@@ -2,7 +2,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
 
 const firebaseConfig = {
-  apiKey: "TU_API_KEY",
+  apiKey: "AIzaSyBlGSvZ3XpcEYlZ2r2e5XiMLqLIvGQcYpk",
   authDomain: "myg-tienda.firebaseapp.com",
   projectId: "myg-tienda",
   storageBucket: "myg-tienda.firebasestorage.app",
